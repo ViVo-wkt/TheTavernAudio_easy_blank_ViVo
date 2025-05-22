@@ -6,7 +6,7 @@ public class FMOD_Commands : MonoBehaviour
 {
     #region EVENT EMITTER
     // EVENT EMITTER
-    //[SerializedField]
+    [SerializeField]
     public FMODUnity.StudioEventEmitter tavernEmitter; // Declaration of a public field that holds the reference to the event emitter on the scene.
     #endregion
 
