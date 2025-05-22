@@ -27,6 +27,32 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 195189
+--- !u!114 &-6296956787367581110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Landings/FootstepSurfaceSwitch
+  m_EditorClassIdentifier: 
+  Name: FootstepSurfaceSwitch
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 326328101
+    data2: 2155345506
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - StoneSurface
+  - WoodSurface
+  Exists: 1
 --- !u!114 &-4172953464490989482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108,6 +134,61 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 487
+--- !u!114 &-592838037363634689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Events/JumpsFull
+  m_EditorClassIdentifier: 
+  Path: event:/Events/JumpsFull
+  Guid:
+    Data1: 165208740
+    Data2: 1293980592
+    Data3: 642160783
+    Data4: 452151838
+  Banks:
+  - {fileID: 9045656271986854632}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 5501065197177774818}
+  - {fileID: -135957899997854935}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 806
+--- !u!114 &-135957899997854935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/JumpsFull/IsGrounded
+  m_EditorClassIdentifier: 
+  Name: IsGrounded
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 3776844473
+    data2: 1771638808
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - False
+  - True
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,12 +211,15 @@ MonoBehaviour:
   - {fileID: -4172953464490989482}
   - {fileID: -6372426738462302214}
   - {fileID: -1045978480666040646}
+  - {fileID: 2601947085266260282}
+  - {fileID: 5387045867948512180}
+  - {fileID: -592838037363634689}
   EditorParameters: []
   MasterBanks:
   - {fileID: 9045656271986854632}
   StringsBanks:
   - {fileID: 2484722623932327166}
-  cacheTime: 638829030739550719
+  cacheTime: 638835085452788260
   cacheVersion: 131617
 --- !u!114 &1120224445852402316
 MonoBehaviour:
@@ -165,6 +249,32 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 750
+--- !u!114 &2211388164711927313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Landings/IsGrounded
+  m_EditorClassIdentifier: 
+  Name: IsGrounded
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 3776844473
+    data2: 1771638808
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - False
+  - True
+  Exists: 1
 --- !u!114 &2484722623932327166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,11 +290,38 @@ MonoBehaviour:
   Path: Audio Project/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638829030739550719
+  lastModified: 638835085452788260
   FileSizes:
   - Name: Desktop
-    Value: 1152
+    Value: 1280
   Exists: 1
+--- !u!114 &2601947085266260282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Events/MusicTavern
+  m_EditorClassIdentifier: 
+  Path: event:/Events/MusicTavern
+  Guid:
+    Data1: 684963791
+    Data2: 1148842756
+    Data3: -384370509
+    Data4: -1551976517
+  Banks:
+  - {fileID: 9045656271986854632}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 77538
 --- !u!114 &2912977330941804130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -211,6 +348,35 @@ MonoBehaviour:
   - StoneSurface
   - WoodSurface
   Exists: 1
+--- !u!114 &5387045867948512180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Events/Landings
+  m_EditorClassIdentifier: 
+  Path: event:/Events/Landings
+  Guid:
+    Data1: -1773152762
+    Data2: 1266348438
+    Data3: 989490079
+    Data4: -1417652985
+  Banks:
+  - {fileID: 9045656271986854632}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 2211388164711927313}
+  - {fileID: -6296956787367581110}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 806
 --- !u!114 &5446308075278908002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -236,6 +402,32 @@ MonoBehaviour:
   Labels:
   - Open
   - Closed
+  Exists: 1
+--- !u!114 &5501065197177774818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/JumpsFull/FootstepSurfaceSwitch
+  m_EditorClassIdentifier: 
+  Name: FootstepSurfaceSwitch
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 326328101
+    data2: 2155345506
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - StoneSurface
+  - WoodSurface
   Exists: 1
 --- !u!114 &6179514869017111145
 MonoBehaviour:
@@ -265,7 +457,7 @@ MonoBehaviour:
   - {fileID: -1076395942590028508}
   MinDistance: 1
   MaxDistance: 20
-  Length: 806
+  Length: 501
 --- !u!114 &6399690926095009769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -334,8 +526,8 @@ MonoBehaviour:
   Path: Audio Project/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638829030739535611
+  lastModified: 638835085452768255
   FileSizes:
   - Name: Desktop
-    Value: 5945376
+    Value: 6924544
   Exists: 1
